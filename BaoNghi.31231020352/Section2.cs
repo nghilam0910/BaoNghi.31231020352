@@ -79,38 +79,55 @@ namespace BaoNghi._31231020352
         /// </summary>
         public static void Question_06()
         {
-            Console.WriteLine("Enter the data type: ");
-            var a = Console.ReadLine();
-            if {
-
-            }
-            Console.WriteLine($"The size of data is {x}");
+            Console.WriteLine("Size of Int: " + sizeof(int));
+            Console.WriteLine("Size of float: " + sizeof(float));
+            Console.WriteLine("Size of double: " + sizeof(double));
+            Console.WriteLine("Size of decimal: " + sizeof(decimal));
+            Console.WriteLine("Size of long: " + sizeof(long));
+            Console.WriteLine("Size of short: " + sizeof(short));
         } 
         /// <summary>
-          /// 
+          /// Print ASCII Value
           /// </summary>
         public static void Question_07()
         {
-
+            Console.Write("Input the character: ");
+            char Character = char.Parse(Console.ReadLine());
+            int ASCII = (int)Character;
+            Console.WriteLine($"ASCII value: {ASCII}");
         } 
         /// <summary>
-          /// Add / Sum Two Numbers
+          /// Calculate Area of Circle
           /// </summary>
         public static void Question_08()
         {
-
-        } /// <summary>
-          /// Add / Sum Two Numbers
-          /// </summary>
+            Console.Write("Nhap ban kinh: ");
+            int r = int.Parse(Console.ReadLine());
+            double PI = 3.14;
+            double area = PI * (r ^ 2);
+            Console.WriteLine($"The Area of this circle is: {area}");
+        } 
+        /// <summary>
+        /// Calculate Area of Square
+        /// </summary>
         public static void Question_09()
         {
-
-        } /// <summary>
-          /// Add / Sum Two Numbers
-          /// </summary>
+            Console.Write("Nhap canh: ");
+            float a = float.Parse(Console.ReadLine());
+            float area = a * a;
+            Console.WriteLine($"The Area of this circle is: {area}");
+        } 
+        /// <summary>
+        /// convert days to years, weeks and days
+        /// </summary>
         public static void Question_10()
         {
-
+            Console.Write("Nhap so ngay: ");
+            int Days = int.Parse(Console.ReadLine());
+            int year = Days / 365;
+            int week = (Days % 365) / 7;
+            int day = (Days % 365) % 7;
+            Console.WriteLine($"{Days} is converted to {year} year(s), {week} week(s) and {day} day(s)");
         }
     }
 }
