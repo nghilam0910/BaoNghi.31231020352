@@ -4,16 +4,16 @@ using System.Diagnostics.Metrics;
 
 namespace BaoNghi._31231020352
 {
-    internal class Section2
+    internal class Session2
     {
-        public static void Main()
+        public static void Main1()
         {
             //Question_01();
             //Question_02();
             //Question_03();
             //Question_04();
             //Question_05();
-            Question_06();
+            //Question_06();
         }
         /// <summary>
         /// Add / Sum Two Numbers
