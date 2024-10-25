@@ -8,7 +8,7 @@ namespace BaoNghi._31231020352
 {
     internal class Session3
     {
-        public static void Main()
+        public static void Main1()
         {
             //Ex_01();
             Ex_02();
