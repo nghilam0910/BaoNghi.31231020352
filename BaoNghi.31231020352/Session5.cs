@@ -10,7 +10,11 @@ namespace BaoNghi._31231020352
         {
             //sesion05_ex01();
             //session05_ex02();
-            session05_ex03();
+            //session05_ex03();
+            ///session05_ex04();
+            ///session05_ex05();
+            ///session05_ex052();
+            session05_ex06();
         }
         static void sesion05_ex01()
         {
@@ -114,34 +118,150 @@ namespace BaoNghi._31231020352
                 Console.WriteLine($"{a} khong la so nguyen to");
             }
         }
+ 
         static void session05_ex04()
         {
-            Console.Write($"Nhap so nguyen to n= ");
+            Console.Write($"Nhap so n= ");
             int n = int.Parse(Console.ReadLine());
-            for (int i = 2; i==n; i++)
+            Console.WriteLine($"Cac so nguyen nho hơn {n} la:");
+            for (int b = 2; b <= n; b++)
             {
-                if (CheckPrime(i)=true)
-                {
 
+                if (CheckPrime(b))
+                {
+                    Console.WriteLine($"{b}");
+                    continue;
+                }
+                else
+                {
+                    continue;
                 }
             }
         }
-        static void CheckPrime(int a)
+
+        static bool CheckPrime(int a)
         {
-            bool CheckPrime = true;
-            for (int i = 2; i<=Math.Sqrt(a); i++)
+            if (a < 2)
             {
-                if (a % i == 0)
+                return false;
+            }
+            else
+            {
+                for (int i = 2; i <= Math.Sqrt(a); i++)
                 {
-                    CheckPrime = false;
-                    break;
+                    if (a % i == 0)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+        static void session05_ex05()
+        {
+            do
+            {
+                Console.Write("Vui long nhap so nguyen duong n:");
+                int n = int.Parse(Console.ReadLine());
+                if (n < 0 || n == 0)
+                {
+                    Console.WriteLine("Vui long nhap so nguyen duong");
+
+                }
+                else
+                {
+                    if (CheckPerfect(n))
+                    {
+                        Console.WriteLine($"{n} la so hoan hao");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{n} khong la so hoan hao");
+                        break;
+                    }
+
+                }
+            } while (true);
+        }
+
+        static int TimTongUoc(int x)
+        {
+            int sum = 0;
+            for (int i = 1; i <= x / 2; i++)
+            {
+                if (x % i == 0)
+                {
+                    sum = sum + i;
                 }
                 else { continue; }
             }
+            return sum;
         }
+        static bool CheckPerfect(int y)
+        {
+            int sum = TimTongUoc(y);
+            if (sum == y)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        static void session05_ex052()
+        {
+            Console.WriteLine("Cac so hoan hao nho hon 1000 la:");
+            int z = 1;
+            do
+            {
+                if (z < 1000)
+                {
+                    if (CheckPerfect(z))
+                    {
+                        Console.WriteLine($"{z}");
+                        z = z + 1;
+                    }
+                    else
+                    {
+                        z = z + 1;
+                        continue;
+                    }
+                }
+                else { break; }
+            } while (true);
+        }
+        static void session05_ex06()
+        {
+            Console.Write("Nhap mot tu hoac mot cau: ");
+            string chuoi = Console.ReadLine();
+            if (KiemChu(chuoi))
+            {
+                Console.WriteLine("Chuoi la pangram");
+            }
+            else
+            {
+                Console.WriteLine("Chuoi khong la pangram");
+            }
+        }
+        static bool KiemChu(string input)
+        {
+            input = input.ToLower();
+            for (char c = 'a'; c <= 'z'; c++)
+            {
+                if (input.Contains(c))
+                {
+                    continue;
+                }
+                else
+                {
+                    return false;
 
-
-
+                }
+            }
+            return true;
+        }
 
     }
 }
