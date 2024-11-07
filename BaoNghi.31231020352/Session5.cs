@@ -16,6 +16,9 @@ namespace BaoNghi._31231020352
             ///session05_ex052();
             session05_ex06();
         }
+        /// <summary>
+        /// Tim so lon nhat
+        /// </summary>
         static void sesion05_ex01()
         {
             Console.WriteLine("Nhap so x: ");
@@ -41,7 +44,9 @@ namespace BaoNghi._31231020352
         {
 
         }
-
+        /// <summary>
+        /// Tim giai thua
+        /// </summary>
         static void session05_ex02()
         {
             do
@@ -75,6 +80,9 @@ namespace BaoNghi._31231020352
             }
 
         }
+        /// <summary>
+        /// Xac dinh so nguyen to
+        /// </summary>
         static void session05_ex03()
         {
             Console.Write("Nhap so x bat ki: ");
@@ -118,6 +126,9 @@ namespace BaoNghi._31231020352
                 Console.WriteLine($"{a} khong la so nguyen to");
             }
         }
+        /// <summary>
+        /// Tim cac so nguyen to nho hon N
+        /// </summary>
  
         static void session05_ex04()
         {
@@ -157,6 +168,9 @@ namespace BaoNghi._31231020352
                 return true;
             }
         }
+        /// <summary>
+        /// Xac dinh so hoan hao
+        /// </summary>
         static void session05_ex05()
         {
             do
@@ -210,6 +224,9 @@ namespace BaoNghi._31231020352
                 return false;
             }
         }
+        /// <summary>
+        /// Xac dinh so hoan hao nho hon 1000
+        /// </summary>
         static void session05_ex052()
         {
             Console.WriteLine("Cac so hoan hao nho hon 1000 la:");
@@ -232,6 +249,9 @@ namespace BaoNghi._31231020352
                 else { break; }
             } while (true);
         }
+        /// <summary>
+        /// Xac dinh Pangram
+        /// </summary>
         static void session05_ex06()
         {
             Console.Write("Nhap mot tu hoac mot cau: ");
