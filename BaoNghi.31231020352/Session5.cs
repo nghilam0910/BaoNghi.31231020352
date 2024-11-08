@@ -6,7 +6,7 @@ namespace BaoNghi._31231020352
 {
     internal class Session5
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             //sesion05_ex01();
             //session05_ex02();
