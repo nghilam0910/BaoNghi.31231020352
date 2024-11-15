@@ -9,7 +9,7 @@ namespace BaoNghi._31231020352
 {
     internal class Session6
     {
-        public static void Main()
+        public static void Main1()
         {
             Console.Write("Vui long nhap so phan tu mang: ");
             int a = int.Parse(Console.ReadLine());
