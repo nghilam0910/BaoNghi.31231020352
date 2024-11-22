@@ -9,7 +9,7 @@ namespace BaoNghi._31231020352
 {
     internal class Session7
     {
-        public static void Main()
+        public static void Main7()
         {
             int[,] a;
             do
